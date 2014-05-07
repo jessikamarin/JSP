@@ -1,0 +1,53 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/bootstrap.css" />
+<link rel="stylesheet" href="css/stylesheet.css" />
+<title>Cadastro</title>
+
+<!-- <script type="text/javascript">
+	function cadastrar() {
+		var nome = document.getElementById("nome").value;
+		var data = document.getElementById("dataNascimento").value;
+		var cpf = document.getElementById("cpf").value;
+		
+		window.alert("Nome: " + nome + "\nData Nascimento: " + data
+					+ "\nCPF: " + cpf);
+		
+	}
+</script> -->
+
+</head>
+<body>
+	
+	<form action="/jsp/index" method="POST">
+		<div class="well conteudo">
+			<fieldset>
+				<div class="input-group">
+					<label for="nome">Nome:</label>
+					<input type="text" name="nome" class="form-control"
+						placeholder="Nome" />
+				</div>	
+					
+				<div class="input-group">	
+					<label for="dataNascimento">Data Nascimento:</label>
+					<input type="date" name="dataNascimento" 
+						class="form-control" placeholder="Data Nascimento"/>
+				</div>
+				
+				<div class="input-group">
+					<label for="cpf">CPF:</label>
+					<input type="text" name="cpf" class="form-control" 
+						placeholder="CPF"/>
+				</div>
+				
+				<div class="input-group">
+					<input type="submit" value="Gravar" class="btn btn-primary"/>
+				</div>
+			</fieldset>	
+		</div>		
+		
+	</form>
+
+</body>
+</html>

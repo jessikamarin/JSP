@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../css/bootstrap.css" />
+<link rel="stylesheet" href="../css/stylesheet.css" />
+<title>Incluir Aluno</title>
+</head>
+
+<body>
+
+    <form action="/jsp/criarAluno" method="POST">
+		<div class="well conteudo">
+			<fieldset>
+				<div class="input-group">
+					<label for="nome">Nome:</label>
+					<input type="text" name="nome" class="form-control"
+						placeholder="Nome" />
+				</div>	
+					
+				<div class="input-group">	
+					<label for="dataNascimento">Data Nascimento:</label>
+					<input type="date" name="dataNascimento" 
+						class="form-control" placeholder="Data Nascimento"/>
+				</div>
+				
+				<div class="input-group">
+					<label for="telefone">Telefone:</label>
+					<input type="text" name="telefone" class="form-control" 
+						placeholder="Telefone"/>
+				</div>
+				
+				<div class="input-group">
+					<input type="submit" value="Gravar" class="btn btn-primary"/>
+				</div>
+			</fieldset>	
+		</div>		
+		
+	</form>
+
+</body>
+</html>
