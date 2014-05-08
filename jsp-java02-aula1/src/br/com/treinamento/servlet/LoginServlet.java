@@ -28,7 +28,7 @@ public class LoginServlet extends HttpServlet {
 		if (usuarioBanco != null) {
 			HttpSession sessao = req.getSession();
 			sessao.setAttribute("usuarioLogado", usuarioBanco);
-			resp.sendRedirect("/jsp/index.html");
+			resp.sendRedirect("/jsp/index.jsp");
 		} else {
 			throw new ServletException(new UsuarioNaoAutorizadoException());
 		}
