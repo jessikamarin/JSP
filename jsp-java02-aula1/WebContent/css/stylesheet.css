@@ -34,3 +34,5 @@ h1, h2 {margin-left: 15px;}
 div.input-group input { margin-left: 15px; width: 250px !important; }
 
 .app-buttons { margin-top: 15px; text-align: right; }
+
+.oculto { display: none; visibility: hidden; }

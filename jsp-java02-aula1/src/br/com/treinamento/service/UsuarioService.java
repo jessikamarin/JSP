@@ -1,6 +1,9 @@
 package br.com.treinamento.service;
 
+import java.util.List;
+
 import javax.persistence.NoResultException;
+import javax.persistence.Query;
 import javax.persistence.TypedQuery;
 
 import br.com.treinamento.domain.Usuario;
@@ -33,5 +36,15 @@ public class UsuarioService extends AbstractService<Usuario> {
 		}
 
 		return usuario;
+	}
+
+	@SuppressWarnings("unchecked")
+	public List<Usuario> buscarUsuarios() {
+
+		String queryStr = "FROM " + Usuario.class.getSimpleName();
+		Query qry = this.getEm().createQuery(queryStr);
+
+		return qry.getResultList();
+
 	}
 }

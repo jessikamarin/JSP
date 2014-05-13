@@ -23,7 +23,7 @@ public class CadastroLoginServlet extends HttpServlet {
 
 		UsuarioService service = new UsuarioService();
 		service.salvar(usuario);
-		resp.sendRedirect("/jsp/listarUsuario.jsp");
+		resp.sendRedirect("/jsp/listagemUsuario.jsp");
 
 	}
 
