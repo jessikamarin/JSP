@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@taglib prefix="d" uri="/WEB-INF/SubstrDescriptor.tld"%>
 <html>
 <head>
 <%@include file="header.jsp" %>
@@ -26,7 +27,7 @@
 					<input type="text" name="nome" class="form-control"
 						placeholder="Nome" />
 				</div>	
-					
+									
 				<div class="input-group">	
 					<label for="login">Login:</label>
 					<input type="date" name="login" 
@@ -38,6 +39,8 @@
 					<input type="password" name="senha" class="form-control" 
 						placeholder="Senha"/>
 				</div>
+				
+				<d:labelInput componentLabel="Campo taglib" componentId="campoTagLib" componentName="campoTagLib"></d:labelInput>
 				
 				<div class="app-buttons">
 					<input type="submit" value="Gravar" class="btn btn-success"/>

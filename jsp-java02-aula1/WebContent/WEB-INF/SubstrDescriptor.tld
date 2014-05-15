@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib>
+	<tlibversion>1.0</tlibversion>
+	<jspversion>1.1</jspversion>
+	<shortname>substr</shortname>
+	<uri>http://treinamento.com.br/jsp/taglib/substr</uri>
+
+	<tag>
+		<name>substring</name>
+		<tagclass>br.com.treinamento.taglib.SubstrTagHandler</tagclass>
+		<attribute>
+			<name>input</name>
+			<required>true</required>
+		</attribute>
+		<attribute>
+			<name>start</name>
+			<required>true</required>
+		</attribute>
+		<attribute>
+			<name>end</name>
+			<required>true</required>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>imprimeDataAtual</name>
+		<tagclass>br.com.treinamento.taglib.ImprimeDataAtualTagHandler
+		</tagclass>
+	</tag>
+
+	<tag>
+		<name>labelInput</name>
+		<tagclass>br.com.treinamento.taglib.LabelInputTagHandler</tagclass>
+		<attribute>
+			<name>componentId</name>
+			<required>true</required>
+		</attribute>
+		<attribute>
+			<name>componentLabel</name>
+			<required>true</required>
+		</attribute>
+		<attribute>
+			<name>componentName</name>
+			<required>true</required>
+		</attribute>
+	</tag>
+
+</taglib>
